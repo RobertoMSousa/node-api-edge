@@ -26,6 +26,7 @@
   "homepage": "https://github.com/RobertoMSousa/node-api-edge#readme",
   "dependencies": {
     "del": "^2.2.2",
+    "edge": "^6.5.1",
     "express": "^4.15.2",
     "gulp": "^3.9.1",
     "gulp-develop-server": "^0.5.2",
