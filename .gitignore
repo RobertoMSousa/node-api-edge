@@ -1,0 +1,4 @@
+/node_modules/
+.editorconfig
+/server/definitions/
+/server/lib/
