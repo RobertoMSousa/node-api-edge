@@ -1,0 +1,51 @@
+{
+  "name": "node-api-edge",
+  "version": "1.0.0",
+  "description": "node server with api that execute c# code using edcdge.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RobertoMSousa/node-api-edge.git"
+  },
+  "keywords": [
+    "edge",
+    "node",
+    "c#",
+    "api",
+    "rest",
+    "server"
+  ],
+  "author": "Roberto Sousa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RobertoMSousa/node-api-edge/issues"
+  },
+  "homepage": "https://github.com/RobertoMSousa/node-api-edge#readme",
+  "dependencies": {
+    "del": "^2.2.2",
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "gulp-develop-server": "^0.5.2",
+    "gulp-install": "^0.6.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-tslint": "^7.1.0",
+    "gulp-typescript": "^3.1.6",
+    "merge2": "^1.0.3",
+    "nconf": "^0.8.4",
+    "pm2": "^2.4.2",
+    "tslint": "^4.5.1",
+    "typescript": "^2.1.6",
+    "vinyl-paths": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/async": "^2.0.38",
+    "@types/body-parser": "0.0.33",
+    "@types/express": "^4.0.35",
+    "@types/nconf": "0.0.33",
+    "@types/node": "^7.0.4"
+  }
+}
