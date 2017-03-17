@@ -17,7 +17,13 @@ const createClientEdge = edge.func(function () {/*
 
 
 export function createNewClient(req: express.Request, res: express.Response): void {
-	console.log('res body-->', req.body);//roberto
-	res.status(200).send('New client added');
-	return;
+	createClientEdge(null, function (error, result) {
+		if (error) {
+			res.status(500).send('Error executing the createClientEdge function');
+			return;
+		};
+		console.log('result-->', result);//roberto
+		res.status(200).send('New client added');
+		return;
+	});
 }
