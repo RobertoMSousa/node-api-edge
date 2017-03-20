@@ -1,10 +1,15 @@
 using System.Threading.Tasks;
 
-public class Startup {
-    public async Task<object> Invoke(dynamic input) {
-        string name = (string)input.name;
-        string vat = (string)input.vat;
-		return ".NET Welcomes " + name + ' ' + vat;
-        return null;
+public class Client {
+    public string name = "foo";
+    public string vat = "123456";
+}
+
+public class Startup
+{
+    public async Task<object> Invoke(dynamic input)
+    {
+        Client client = new Client();
+        return client;
     }
 }
