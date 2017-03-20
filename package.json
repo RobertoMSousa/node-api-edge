@@ -27,6 +27,8 @@
   "dependencies": {
     "del": "^2.2.2",
     "edge": "^6.5.1",
+	"edge-cs": "1.2.1",
+    "nan": "^2.0.9",
     "express": "^4.15.2",
     "gulp": "^3.9.1",
     "gulp-develop-server": "^0.5.2",
