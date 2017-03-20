@@ -1,23 +1,21 @@
 
+import edge = require('edge');
 import express = require('express');
 import path = require('path');
 import fs = require('fs');
-import edge = require('edge');
 
 
 const app = require('../application');
 
-
-
-const createClientEdge = edge.func(function () {/*
+var helloWorld = edge.func(`
 	async (input) => {
 		return ".NET Welcomes " + input.ToString();
 	}
-*/});
+`);
 
 
 export function createNewClient(req: express.Request, res: express.Response): void {
-	createClientEdge(null, function (error, result) {
+	helloWorld('javascript', function (error, result) {
 		if (error) {
 			res.status(500).send('Error executing the createClientEdge function');
 			return;
